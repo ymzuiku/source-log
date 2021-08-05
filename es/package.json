@@ -1,0 +1,16 @@
+{
+  "name": "source-log",
+  "version": "0.0.1",
+  "description": "Log code source line",
+  "main": "es/index.js",
+  "types": "lib/index.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "es": "npx bike lib --out=es"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
