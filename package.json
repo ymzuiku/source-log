@@ -1,6 +1,6 @@
 {
   "name": "source-log",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Log code source line",
   "main": "es/index.js",
   "types": "lib/index.ts",
@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bike": "^0.6.9"
+    "bike": "^0.6.11"
   },
   "repository": {
     "type": "git",

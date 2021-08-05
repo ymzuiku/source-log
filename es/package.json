@@ -1,6 +1,6 @@
 {
   "name": "source-log",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Log code source line",
   "main": "es/index.js",
   "types": "lib/index.ts",
@@ -12,5 +12,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymzuiku/source-log.git"
+  }
 }

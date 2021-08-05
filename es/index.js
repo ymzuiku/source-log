@@ -1,2 +1,2 @@
-var n=Object.defineProperty;var t=e=>n(e,"__esModule",{value:!0});var l=(e,s)=>{t(e);for(var o in s)n(e,o,{get:s[o],enumerable:!0})};l(exports,{sourceLog:()=>p});var r=process.cwd()+"/",g=new RegExp(r+".*(.ts)");function p(...e){let s=new Error(""),o="";s.stack.split(`
-`).reverse().forEach(c=>{g.test(c)&&(o=c.split(r)[1].replace(/(\(|\))/g,""))}),console.log(o),console.log(...e)}0&&(module.exports={sourceLog});
+var t=Object.defineProperty;var c=e=>t(e,"__esModule",{value:!0});var l=(e,s)=>{c(e);for(var o in s)t(e,o,{get:s[o],enumerable:!0})};l(exports,{sourceLog:()=>i});var r=process.cwd()+"/",g=new RegExp(r+".*(.ts)"),p=new RegExp("node_modules");function i(...e){let s=new Error(""),o="";s.stack.split(`
+`).reverse().forEach(n=>{p.test(n)||g.test(n)&&(o=n.split(r)[1].replace(/(\(|\))/g,""))}),console.log(o),console.log(...e)}0&&(module.exports={sourceLog});

@@ -1,5 +1,6 @@
 const cwd = process.cwd() + "/";
 const cwdReg = new RegExp(cwd + ".*(.ts)");
+const nodeModulesReg = new RegExp("node_modules");
 
 export function sourceLog(...args: any[]) {
   const err = new Error("");
@@ -8,6 +9,9 @@ export function sourceLog(...args: any[]) {
     .stack!.split("\n")
     .reverse()
     .forEach((code) => {
+      if (nodeModulesReg.test(code)) {
+        return;
+      }
       if (cwdReg.test(code)) {
         line = code.split(cwd)[1].replace(/(\(|\))/g, "");
       }
